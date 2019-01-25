@@ -96,7 +96,7 @@ It's got 3 analog pins, 2 PWM pins ...
 
 
 8. By default, the internal clock date of the ATtiny85 is 1 MHz, which is too slow. In order to reset its clock rate, we need to burn the bootloader! Go to Tools > Burn Bootloader.
-9. Once the bootloader has been successfully burned, you can upload whatever program you want onto your IC. (Blink is probably a good place to start.)
+9. Once the bootloader has been successfully burned, you can upload whatever program you want onto your IC. ([Blink](https://create.arduino.cc/projecthub/arjun/programming-attiny85-with-arduino-uno-afb829#toc-testing-attiny85-blink-4) is probably a good place to start.)
 
 **Load whatever program you want onto your ATTiny85**
 
@@ -107,7 +107,7 @@ If you use Blink from examples, change the Pin # to 0 (which is in position 5 on
 
 Beyond the scope of this workshop, but the next step is:
 
-8. Solder your desired circuit (+ IC chip) onto perf board. Be free of your breadboard!
+10. Solder your desired circuit (+ IC chip) onto perf board. Be free of your breadboard!
 
 ## Fun
 
