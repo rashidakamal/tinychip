@@ -91,7 +91,9 @@ It's got 3 analog pins, 2 PWM pins, all of the I/O pins can be used as digital p
 
 Your settings under Tools should look something like this:
 
-![](/images/4.png)
+<p align="center">
+  <img src="/images/4.png">
+</p>
 
 **Connect and initialize our ATTiny85 chip**
 
