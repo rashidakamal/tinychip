@@ -81,8 +81,8 @@ It's got 3 analog pins, 2 PWM pins, all of the I/O pins can be used as digital p
 3. Select **ATtiny25/45/85** from **Tools -> Board...** You may have to have to search and install the ATtiny25/45/85 from the **Boards Manager** (also found under Tools -> Board...).
 
 <p align="center">
-  <img width="460" height="300" src="/images/2.png">
-	<img width="460" height="300" src="/images/3.png">
+  <img src="/images/2.png">
+	<img src="/images/3.png">
 </p>
 
 4. Change Processor to ATTiny85 (**Tools -> Processor -> ATTiny85**).
