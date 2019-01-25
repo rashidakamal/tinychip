@@ -34,6 +34,7 @@ For our workshop, we're going to focus on the ATTiny85. It's a bit smaller than 
 + It't way smaller!
 
 **CONs**
++ Harder for beginners
 + The onboard oscillator can go as fast as 8mHZ (meaning that its clock rate is slower than your Arduino Uno).  
 
 ## Materials
