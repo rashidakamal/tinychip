@@ -20,7 +20,7 @@ This is where I learned everything!
 5. Troubleshooting
 6. Miscellaneous
 
-### Why Use an IC instead of a Arduino Uno?
+## Purpose: Why Use an IC instead of a Arduino Uno?
 
 Our Arduino Unos use an ATmel AVR chips as their onboard microcontroller (AVR stands for "automatic voltage regulation"). If you look closely at your board, you'll see that it has a ATmega328P. AVR chips are a type of IC, or integrated circuit.
 
@@ -36,7 +36,7 @@ For our workshop, we're going to focus on the ATTiny85. It's a bit smaller than 
 **CONs**
 + The onboard oscillator can go as fast as 8mHZ (meaning that its clock rate is slower than your Arduino Uno).  
 
-### Materials
+## Materials
 
 + Arduino Uno (or other microcontroller board you are comfortable with)
 + ATTiny85 chip
@@ -52,7 +52,7 @@ For our workshop, we're going to focus on the ATTiny85. It's a bit smaller than 
 + 47 μF capacitor
 + Maybe a resistor of low resistance
 
-### Setup
+## Setup
 
 We have a few options for programming our ATTiny85 chips. We can use a [Tiny AVR Programmer](https://www.sparkfun.com/products/11801?_ga=2.254947915.295978248.1548287842-129504373.1548287842) (which costs $15.95!!!) or, we can temporarily reprogram our Arduinos to act as an ISP, or "in-system programmer."
 
@@ -108,15 +108,16 @@ Beyond the scope of this workshop, but the next step is:
 
 8. Solder your desired circuit (+ IC chip) onto perf board. Be free of your breadboard!
 
-### Fun
+## Fun
 
 We can see more complex programs too! Let's try to program some Neopixels.
 
-### Troubleshooting
+## Troubleshooting
 
 + Error burning the bootloader: double check your wiring and then click Burn Bootloader again!
++ Double check your wiring using a multimeter. 
 
-### Miscellaneous
+## Miscellaneous
 
 A bunch of other resources and questions I encountered while learning about this:
 
