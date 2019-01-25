@@ -32,10 +32,12 @@ For our workshop, we're going to focus on the ATTiny85. It's a bit smaller than 
 
 + It's way cheaper
 + It't way smaller!
++ It can do most things!
 
 **CONs**
 + Harder for beginners
-+ The onboard oscillator can go as fast as 8mHZ (meaning that its clock rate is slower than your Arduino Uno).  
++ It's a bit slower. The onboard oscillator can go as fast as 8mHZ, which is not noticeable for most use cases but  its clock rate is slower than your Arduino Uno.  
++ No UART serial communications (but yes, I2C and SPI)
 
 ## Materials
 
@@ -63,21 +65,30 @@ To understand how we will go about communicating with our ATTiny85 chip, let's t
 
 ![](/images/pins.png)
 
-It's got 3 analog pins, 2 PWM pins ...
+It's got 3 analog pins, 2 PWM pins, all of the I/O pins can be used as digital pins.
 
 **Program our Arduino to act as an AVR programmer**
 
-1. Open the Arduino IDE. Load the ArduinoISP sketch from File -> Examples -> ArduinoISP. Upload this sketch onto your Arduino board.
+1. Open the Arduino IDE. Load the ArduinoISP sketch from **File -> Examples -> ArduinoISP**. Upload this sketch onto your Arduino board. You only need to do this once, at this step.
 
 **Update settings in our Arduino IDE so it can talk to our ATTiny85**
 
-2. We also need to add the ATtiny85 board to our Board Manager. Go to File -> Preferences and under Additional Boards Manager add this url: `https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json`.
+2. We also need to add the ATtiny85 board to our Board Manager. Go to **File -> Preferences** and under **Additional Boards Manager** add this url: `https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json`.
 
+![](/images/1.PNG)
 
-3. Select ATtiny25/45/85 from Tools -> Board... You may have to have to search and install the ATtiny25/45/85 from the Boards Manager (also found under Tools -> Board...).
-4. Change Processor to ATTiny85 (Tools -> Processor -> ATTiny85).
-5. Select 8 MHz (internal) under Tools -> Clock. By default, the clock rate of ATTiny85 runs at 1 Mhz, but this will be too slow for most things we want to do.
-6. Select "Arduino as ISP" from Tools > Programmer.
+3. Select **ATtiny25/45/85** from **Tools -> Board...** You may have to have to search and install the ATtiny25/45/85 from the **Boards Manager** (also found under Tools -> Board...).
+
+![](/images/2.PNG)
+![](/images/3.PNG)
+
+4. Change Processor to ATTiny85 (**Tools -> Processor -> ATTiny85**).
+5. Select **8 MHz (internal)** under **Tools -> Clock**. By default, the clock rate of ATTiny85 runs at 1 Mhz, but this will be too slow for most things we want to do.
+6. Select **"Arduino as ISP"** from **Tools > Programmer**.
+
+Your settings under Tools should look something like this:
+
+![](/images/4.PNG)
 
 **Connect and initialize our ATTiny85 chip**
 
@@ -96,13 +107,16 @@ It's got 3 analog pins, 2 PWM pins ...
 - IC Pin 4 to GND
 
 
-8. By default, the internal clock date of the ATtiny85 is 1 MHz, which is too slow. In order to reset its clock rate, we need to burn the bootloader! Go to Tools > Burn Bootloader.
+8. By default, the internal clock date of the ATtiny85 is 1 MHz, which is too slow. In order to reset its clock rate to 8 MHz (as per our settings above), we need to burn the bootloader! Go to **Tools > Burn Bootloader**.
+
+> **Note:** You only need to burn bootloader once (when you first initialize your ATtiny/reset its clock). Afterwards, you can just go directly to step 9, assuming that you're connected to your ATtiny85 as described in step 7.
+
 9. Once the bootloader has been successfully burned, you can upload whatever program you want onto your IC. ([Blink](https://create.arduino.cc/projecthub/arjun/programming-attiny85-with-arduino-uno-afb829#toc-testing-attiny85-blink-4) is probably a good place to start.)
 
 **Load whatever program you want onto your ATTiny85**
 
 Now, your Blink (or whatever program) can run independently of your Arduino, though you will still need to give it a power supply. Your Arduino is free to be used for something else.
-If you use Blink from examples, change the Pin # to 0 (which is in position 5 on the ATtiny85 IC).
+If you use Blink from examples, change the Pin # to 0 (which is in position 5 on the ATtiny85 IC). [This tutorial](https://create.arduino.cc/projecthub/arjun/programming-attiny85-with-arduino-uno-afb829#toc-testing-attiny85-blink-4) shows you how to wire your ATTiny85 so that can see Blink in action.  
 
 **Next steps**
 
@@ -112,7 +126,7 @@ Beyond the scope of this workshop, but the next step is:
 
 ## Fun
 
-We can see more complex programs too! Let's try to program some Neopixels.
+We can see more complex programs too! Let's try to program some Neopixels. [This Instructable](https://www.instructables.com/id/Use-a-1-ATTiny-to-drive-addressable-RGB-LEDs/) shows the basic wiring of an ATTiny85 to a Neopixel strand.
 
 ## Troubleshooting
 
@@ -125,3 +139,6 @@ A bunch of other resources and questions I encountered while learning about this
 
 + [What exactly is a AVR microcontroller](https://en.wikipedia.org/wiki/AVR_microcontrollers)
 + [What is a bootloader? When do you burn it??](https://www.arduino.cc/en/Hacking/Bootloader?from=Tutorial.Bootloader)
++ [Tiny AVR Programmer Hookup Guide](https://learn.sparkfun.com/tutorials/tiny-avr-programmer-hookup-guide/attiny85-use-hints)
++ [Comparison of ATmel chips](https://thewanderingengineer.com/2013/04/28/comparison-of-atmel-chips/)
++ [What advantages does AVR have over Arduino and vice versa?](https://www.quora.com/What-advantages-does-AVR-have-over-Arduino-and-vice-versa)
