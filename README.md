@@ -75,12 +75,15 @@ It's got 3 analog pins, 2 PWM pins, all of the I/O pins can be used as digital p
 
 2. We also need to add the ATtiny85 board to our Board Manager. Go to **File -> Preferences** and under **Additional Boards Manager** add this url: `https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json`.
 
+
 ![](/images/1.png)
 
 3. Select **ATtiny25/45/85** from **Tools -> Board...** You may have to have to search and install the ATtiny25/45/85 from the **Boards Manager** (also found under Tools -> Board...).
 
-![](/images/2.png)
-![](/images/3.png)
+<p align="center">
+  <img width="460" height="300" src="/images/2.png">
+	<img width="460" height="300" src="/images/3.png">
+</p>
 
 4. Change Processor to ATTiny85 (**Tools -> Processor -> ATTiny85**).
 5. Select **8 MHz (internal)** under **Tools -> Clock**. By default, the clock rate of ATTiny85 runs at 1 Mhz, but this will be too slow for most things we want to do.
@@ -142,3 +145,4 @@ A bunch of other resources and questions I encountered while learning about this
 + [Tiny AVR Programmer Hookup Guide](https://learn.sparkfun.com/tutorials/tiny-avr-programmer-hookup-guide/attiny85-use-hints)
 + [Comparison of ATmel chips](https://thewanderingengineer.com/2013/04/28/comparison-of-atmel-chips/)
 + [What advantages does AVR have over Arduino and vice versa?](https://www.quora.com/What-advantages-does-AVR-have-over-Arduino-and-vice-versa)
++ [Sparkfun Electronics ATtiny85 Arduino Quick Reference Sheet](https://cdn.sparkfun.com/assets/2/8/b/a/a/Tiny_QuickRef_v2_2.pdf)
