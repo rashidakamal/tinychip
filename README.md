@@ -75,12 +75,12 @@ It's got 3 analog pins, 2 PWM pins, all of the I/O pins can be used as digital p
 
 2. We also need to add the ATtiny85 board to our Board Manager. Go to **File -> Preferences** and under **Additional Boards Manager** add this url: `https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json`.
 
-![](/images/1.PNG)
+![](/images/1.png)
 
 3. Select **ATtiny25/45/85** from **Tools -> Board...** You may have to have to search and install the ATtiny25/45/85 from the **Boards Manager** (also found under Tools -> Board...).
 
-![](/images/2.PNG)
-![](/images/3.PNG)
+![](/images/2.png)
+![](/images/3.png)
 
 4. Change Processor to ATTiny85 (**Tools -> Processor -> ATTiny85**).
 5. Select **8 MHz (internal)** under **Tools -> Clock**. By default, the clock rate of ATTiny85 runs at 1 Mhz, but this will be too slow for most things we want to do.
@@ -88,7 +88,7 @@ It's got 3 analog pins, 2 PWM pins, all of the I/O pins can be used as digital p
 
 Your settings under Tools should look something like this:
 
-![](/images/4.PNG)
+![](/images/4.png)
 
 **Connect and initialize our ATTiny85 chip**
 
