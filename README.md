@@ -63,7 +63,9 @@ We have a few options for programming our ATTiny85 chips. We can use a [Tiny AVR
 
 To understand how we will go about communicating with our ATTiny85 chip, let's take a look at its pins:
 
-![](/images/pins.png)
+<p align="center">
+  <img src="/images/pins.png">
+</p>
 
 It's got 3 analog pins, 2 PWM pins, all of the I/O pins can be used as digital pins.
 
@@ -99,9 +101,9 @@ Your settings under Tools should look something like this:
 
 7. Next, wire your Arduino to your ATTiny85 so we can actually start talking to it! Wire it as seen below:
 
-
-![](/images/isp.png)
-
+<p align="center">
+  <img src="/images/jsp.png">
+</p>
 
 - 10 μF capacitor between RESET & GND on your Arduino
 - IC Pin 8 to 5V
