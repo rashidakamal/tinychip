@@ -59,9 +59,9 @@ We have a few options for programming our ATTiny85 chips. We can use a [Tiny AVR
 **About the ATTiny85**
 
 To understand how we will go about communicating with our ATTiny85 chip, let's take a look at its pins:
-<center>
+
 ![](/images/pins.png)
-</center>
+
 It's got 3 analog pins, 2 PWM pins ...
 
 **Program our Arduino to act as an AVR programmer**
@@ -82,9 +82,10 @@ It's got 3 analog pins, 2 PWM pins ...
 
 7. Next, wire your Arduino to your ATTiny85 so we can actually start talking to it! Wire it as seen below:
 
-<center>
+
 ![](/images/isp.png)
-</center>
+
+
 - 10 μF capacitor between RESET & GND on your Arduino
 - IC Pin 8 to 5V
 - IC Pin 7 to Arduino Pin 13
@@ -115,7 +116,7 @@ We can see more complex programs too! Let's try to program some Neopixels.
 ## Troubleshooting
 
 + Error burning the bootloader: double check your wiring and then click Burn Bootloader again!
-+ Double check your wiring using a multimeter. 
++ Double check your wiring using a multimeter.
 
 ## Miscellaneous
 
