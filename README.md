@@ -13,12 +13,12 @@ This is where I learned everything!
 
 ## Agenda
 
-1. Purpose
-2. Materials
-3. Setup
-4. Fun
-5. Troubleshooting
-6. Miscellaneous
+1. [Purpose](https://github.com/rashidakamal/tinychip#purpose-why-use-an-ic-instead-of-a-arduino-uno)
+2. [Materials](https://github.com/rashidakamal/tinychip#materials)
+3. [Setup](https://github.com/rashidakamal/tinychip#setup)
+4. [Fun](https://github.com/rashidakamal/tinychip#fun)
+5. [Troubleshooting](https://github.com/rashidakamal/tinychip#troubleshooting)
+6. [Miscellaneous](https://github.com/rashidakamal/tinychip#miscellaneous)
 
 ## Purpose: Why Use an IC instead of a Arduino Uno?
 
@@ -141,7 +141,7 @@ We can see more complex programs too! Let's try to program some Neopixels. [This
 + Double check your wiring using a multimeter.
 + Make sure that you have the `ArduinoISP` sketch loaded onto your Arduino, NOT your ATTiny85 chip. You only want to upload the target script (like, Blink or Strandtest) to your ATTiny85. You can double check the settings under Tools to confirm you're talking to the right board.
 + Make sure that your serial port is talking to the Arduino IDE (disconnect and reconnect your Arduino as necessary, and re-select the correct port).
-+ If you're using different development board (Arduino Zero, Curie 101, etc.) you may have to adjust the pins either in the `ArduinoISP` sketch or adjust which pins you connect the ATTiny85 when programming it from your board. 
++ If you're using different development board (Arduino Zero, Curie 101, etc.) you may have to adjust the pins either in the `ArduinoISP` sketch or adjust which pins you connect the ATTiny85 when programming it from your board.
 
 
 ## Miscellaneous
