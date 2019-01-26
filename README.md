@@ -31,7 +31,7 @@ For our workshop, we're going to focus on the ATTiny85. It's a bit smaller than 
 **PROs**
 
 + It's way cheaper
-+ It't way smaller!
++ It's way smaller!
 + It can do most things!
 
 **CONs**
