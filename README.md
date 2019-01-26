@@ -139,6 +139,10 @@ We can see more complex programs too! Let's try to program some Neopixels. [This
 
 + Error burning the bootloader: double check your wiring and then click Burn Bootloader again!
 + Double check your wiring using a multimeter.
++ Make sure that you have the `ArduinoISP` sketch loaded onto your Arduino, NOT your ATTiny85 chip. You only want to upload the target script (like, Blink or Strandtest) to your ATTiny85. You can double check the settings under Tools to confirm you're talking to the right board.
++ Make sure that your serial port is talking to the Arduino IDE (disconnect and reconnect your Arduino as necessary, and re-select the correct port).
++ If you're using different development board (Arduino Zero, Curie 101, etc.) you may have to adjust the pins either in the `ArduinoISP` sketch or adjust which pins you connect the ATTiny85 when programming it from your board. 
+
 
 ## Miscellaneous
 
