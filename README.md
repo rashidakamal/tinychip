@@ -102,7 +102,7 @@ Your settings under Tools should look something like this:
 7. Next, wire your Arduino to your ATTiny85 so we can actually start talking to it! Wire it as seen below:
 
 <p align="center">
-  <img src="/images/jsp.png">
+  <img src="/images/isp.png">
 </p>
 
 - 10 μF capacitor between RESET & GND on your Arduino
